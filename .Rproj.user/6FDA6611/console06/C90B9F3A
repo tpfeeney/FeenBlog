@@ -34,4 +34,40 @@ INFO 2018/05/25 21:10:00 Alias "/tags/regression/page/1/index.html" translated t
   Cleaned          |  0  
 
 Total in 98 ms
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/05/25 21:38:04 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 21:38:04 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+ERROR 2018/05/25 21:38:04 failed to parse page metadata for "publication/NSQIP_EGS.md": Near line 1 (last key parsed 'title'): strings cannot contain newlines
+[?25h[KTotal in 72 ms
+Error: Error building site: failed to parse page metadata for "publication/NSQIP_EGS.md": Near line 1 (last key parsed 'title'): strings cannot contain newlines
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ v[Khugo -v
+INFO 2018/05/25 21:38:36 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 21:38:36 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/05/25 21:38:36 found taxonomies: map[string]string{"tag":"tags", "category":"categories", "publication_type":"publication_types"}
+ERROR 2018/05/25 21:38:36 The `projects` parameter in `content/publication/NSQIP_EGS.md` references a project file, `content/project/`, which cannot be found. Please either set `projects = []` or fix the reference.
+INFO 2018/05/25 21:38:36 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/demo/page/1/index.html" translated to "tags/demo/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/deep-learning/page/1/index.html" translated to "tags/deep-learning/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/05/25 21:38:36 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 30  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 11  
+  Processed images |  0  
+  Aliases          | 12  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 133 ms
 ]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 

@@ -1,6 +1,5 @@
 +++
-title = "The independent effect of emergency general surgery on outcomes varies depending
-on case type: A NSQIP outcomes study"
+title = "The independent effect of emergency general surgery on outcomes varies depending on case type: A NSQIP outcomes study"
 date = 2018-03-07T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
