@@ -16,7 +16,7 @@ image_preview = "AIQIP.jpg"
 tags = ["aiqip"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "www.incidentaloma.net"
+external_link = "http://www.incidentaloma.net"
 
 # Does the project detail page use math formatting?
 math = false
