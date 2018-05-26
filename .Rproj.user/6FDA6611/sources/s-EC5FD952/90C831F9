@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "626781416",
+    "hash" : "1139664665",
     "id" : "90C831F9",
-    "lastKnownWriteTime" : 1527293614,
-    "last_content_update" : 1527293614,
+    "lastKnownWriteTime" : 1527295342,
+    "last_content_update" : 1527295342910,
     "path" : "~/Documents/GitHub/FeenBlog/config.toml",
     "project_path" : "config.toml",
     "properties" : {
+        "cursorPosition" : "228,33",
+        "scrollLine" : "223"
     },
     "relative_order" : 1,
     "source_on_save" : false,
