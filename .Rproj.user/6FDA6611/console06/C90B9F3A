@@ -99,4 +99,62 @@ INFO 2018/05/25 21:44:23 Alias "/tags/page/1/index.html" translated to "tags/pag
   Cleaned          |  0  
 
 Total in 144 ms
-]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/05/25 21:57:58 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 21:57:58 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/05/25 21:57:58 found taxonomies: map[string]string{"tag":"tags", "category":"categories", "publication_type":"publication_types"}
+INFO 2018/05/25 21:57:58 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/demo/page/1/index.html" translated to "tags/demo/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/deep-learning/page/1/index.html" translated to "tags/deep-learning/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+INFO 2018/05/25 21:57:58 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 31  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 11  
+  Processed images |  0  
+  Aliases          | 12  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 144 ms
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/05/25 22:02:52 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 22:02:52 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/05/25 22:02:52 found taxonomies: map[string]string{"publication_type":"publication_types", "tag":"tags", "category":"categories"}
+INFO 2018/05/25 22:02:52 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/demo/page/1/index.html" translated to "tags/demo/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/deep-learning/page/1/index.html" translated to "tags/deep-learning/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+INFO 2018/05/25 22:02:52 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 31  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 11  
+  Processed images |  0  
+  Aliases          | 12  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 146 ms
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ [KTims-MacBook-2:FeenBlog tim$ 
