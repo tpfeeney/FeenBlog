@@ -19,7 +19,7 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "MPH Quantitativ Methods (Epi/Biostat)"
+  course = "MPH Quantitative Methods (Epi/Biostat)"
   institution = "Harvard TH Chan School of Public Health"
   year = 2017
 
