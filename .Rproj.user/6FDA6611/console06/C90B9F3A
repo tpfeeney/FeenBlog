@@ -4,4 +4,34 @@ INFO 2018/05/25 21:07:17 Using config file: /Users/tim/Documents/GitHub/FeenBlog
 ERROR 2018/05/25 21:07:17 failed to parse page metadata for "home/about.md": Near line 11 (last key parsed 'interests.interests'): expected a comma or array terminator ']', but got '"' instead
 [?25h[KTotal in 66 ms
 Error: Error building site: failed to parse page metadata for "home/about.md": Near line 11 (last key parsed 'interests.interests'): expected a comma or array terminator ']', but got '"' instead
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/05/25 21:10:00 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 21:10:00 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/05/25 21:10:00 found taxonomies: map[string]string{"publication_type":"publication_types", "tag":"tags", "category":"categories"}
+INFO 2018/05/25 21:10:00 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/publication_types/1/page/1/index.html" translated to "publication_types/1/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/deep-learning/page/1/index.html" translated to "tags/deep-learning/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/demo/page/1/index.html" translated to "tags/demo/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+INFO 2018/05/25 21:10:00 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 31  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 11  
+  Processed images |  0  
+  Aliases          | 13  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 98 ms
 ]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 
