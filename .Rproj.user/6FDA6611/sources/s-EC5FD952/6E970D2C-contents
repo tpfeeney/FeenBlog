@@ -34,7 +34,7 @@ selected = true
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename of your project in `content/project/`.
 #   Otherwise, set `projects = []`.
-projects = [""]
+projects = []
 
 # Links (optional).
 url_pdf = "https://www.americanjournalofsurgery.com/article/S0002-9610(18)30008-4/pdf"
@@ -49,7 +49,7 @@ url_source = "https://www.ncbi.nlm.nih.gov/pubmed/29534818"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Custom Link", url = "http://example.org"}]
+#url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Does the content use math formatting?
 math = true
@@ -65,4 +65,4 @@ caption = "My caption :smile:"
 
 +++
 
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
+#More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
