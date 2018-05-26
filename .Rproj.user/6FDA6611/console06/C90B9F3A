@@ -1,0 +1,7 @@
+]0;~/Documents/GitHub/FeenBlog[?1034hTims-MacBook-2:FeenBlog tim$ [KTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/05/25 21:07:17 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/05/25 21:07:17 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+ERROR 2018/05/25 21:07:17 failed to parse page metadata for "home/about.md": Near line 11 (last key parsed 'interests.interests'): expected a comma or array terminator ']', but got '"' instead
+[?25h[KTotal in 66 ms
+Error: Error building site: failed to parse page metadata for "home/about.md": Near line 11 (last key parsed 'interests.interests'): expected a comma or array terminator ']', but got '"' instead
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 

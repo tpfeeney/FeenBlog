@@ -10,8 +10,8 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Surgery"
-    "Critical Care"
+    "Surgery",
+    "Critical Care",
     "Clinical Epidemiology",
     "Causal Inference",
     "Bayesian Methodology"
