@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527296456669.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B4332A0B",
+    "lastKnownWriteTime" : 1527295342,
+    "last_content_update" : 1527295342,
+    "path" : "~/Documents/GitHub/FeenBlog/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "228,33",
+        "scrollLine" : "273"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}
