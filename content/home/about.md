@@ -46,4 +46,4 @@ weight = 5
 
 # Hello and Welcome!
 
-My name is Tim, and I am a Post Doc at Boston Univeristy. My current reserach involves investigating the impact of race and and socioeconomic status on surgery outcomes. I am also studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.
+My name is Tim, and I am a Post Doc at Boston University. My current reserach involves investigating the impact of race and and socioeconomic status on surgery outcomes. I am also studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.

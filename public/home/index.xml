@@ -28,7 +28,16 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Hello and Welcome! My name is Tim, and I am a Post Doc at Boston Univeristy. My current reserach involves investigating the impact of race and and socioeconomic status on surgery outcomes. I am also studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.</description>
+      <description>Hello and Welcome! My name is Tim, and I am a Post Doc at Boston University. My current reserach involves investigating the impact of race and and socioeconomic status on surgery outcomes. I am also studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.</description>
+    </item>
+    
+    <item>
+      <title>Current Projects</title>
+      <link>/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>/home/projects/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -64,15 +73,6 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>/home/projects/</guid>
       <description></description>
     </item>
     
