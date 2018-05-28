@@ -39,13 +39,16 @@ projects = []
 # Links (optional).
 url_pdf = "https://www.americanjournalofsurgery.com/article/S0002-9610(18)30008-4/pdf"
 url_preprint = ""
-url_code = "#"
-url_dataset = "#"
-url_project = "#"
-url_slides = "#"
-url_video = "#"
-url_poster = "#"
-url_source = "https://www.ncbi.nlm.nih.gov/pubmed/29534818"
+url_code = ""
+url_dataset = ""
+url_project = ""
+url_slides = ""
+url_video = ""
+url_poster = ""
+url_source = ""
+[[url_custom]]
+name = "PubMed"
+url ="https://www.ncbi.nlm.nih.gov/pubmed/29534818"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.

@@ -46,6 +46,10 @@ url_video = ""
 url_poster = ""
 url_source = ""
 
+[[url_custom]]
+name = "PubMed"
+url ="#"
+
 # Does the content use math formatting?
 math = true
 

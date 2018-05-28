@@ -33,12 +33,12 @@ filter_default = 0
   tag = "*"
 
 [[filter]]
-  name = ""
-  tag = ""
+  name = "AIQIP"
+  tag = ".aiqip"
 
 [[filter]]
-  name = ""
-  tag = ""
+  name = "Language"
+  tag = ".language-outcomes"
 
 +++
 
