@@ -1,9 +1,9 @@
 +++
-title = "Prophylactic use of alpha-1 adrenergic blocking agents for prevention of postoperative urinary retention: A review & meta-analysis of randomized clinical trials"
-date = 2018-01-19T00:00:00
+title = "Long-term follow-up of blunt cerebrovascular injuries: Does time heal all wounds?."
+date = 2016-12-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["A Ghuman", "SW de Jonge", "SD Dryden", "T Feeney", "DH Buitrago", "PT Phang"]
+authors = ["A Laser", "BR Bruns", "J Kufera", "A Kim", "T Feeney", "R Tesoriero", "M Lauerman", "C Sliker", "T Scalea", "DM Stein"]
 
 # Publication type.
 # Legend:
@@ -17,8 +17,8 @@ authors = ["A Ghuman", "SW de Jonge", "SD Dryden", "T Feeney", "DH Buitrago", "P
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "In The *American Journal of Surgery*."
-publication_short = "In *AJS*"
+publication = "In The *Journal of Trauma and Acute Care Surgery*."
+publication_short = "In *JTACS*"
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -28,15 +28,16 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
-#   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
+#   Simply enter the filename of your project in `content/project/`.
+#   Otherwise, set `projects = []`.
 projects = []
 
 # Links (optional).
-url_pdf = "https://www.americanjournalofsurgery.com/article/S0002-9610(17)31549-0/pdf"
+url_pdf = ""
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -45,10 +46,13 @@ url_slides = ""
 url_video = ""
 url_poster = ""
 url_source = ""
+#[[url_custom]]
+#name = "PubMed"
+#url =""
 
-[[url_custom]]
-name = "PubMed"
-url ="#"
+# Custom links (optional).
+#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
+#url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Does the content use math formatting?
 math = true
@@ -60,7 +64,7 @@ highlight = true
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
 image = ""
-caption = ""
+caption = "My caption :smile:"
 
 +++
 

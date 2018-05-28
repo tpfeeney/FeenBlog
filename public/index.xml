@@ -50,6 +50,26 @@
     </item>
     
     <item>
+      <title>Disease-causing Mutations in the Promoter and Enhancer of the Ornithine Transcarbamylase Gene</title>
+      <link>/publication/promoter_2017/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/promoter_2017/</guid>
+      <description>&lt;p&gt;#More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Transfer in a Science DMZ using SDN with Applications for Precision Medicine in Cloud and High-performance Computing</title>
+      <link>/publication/pho_hp_data_transfer/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/pho_hp_data_transfer/</guid>
+      <description>&lt;p&gt;#More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Resident and fellow participation in Thyroid and Parathyroid surgery: an ACS-NSQIP clinical outcomes analysis</title>
       <link>/publication/thryoid_nsqip/</link>
       <pubDate>Tue, 22 Aug 2017 00:00:00 -0400</pubDate>
@@ -66,6 +86,16 @@
       
       <guid>/talk/example-talk/</guid>
       <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Long-term follow-up of blunt cerebrovascular injuries: Does time heal all wounds?.</title>
+      <link>/publication/blunt_cv_laser/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/blunt_cv_laser/</guid>
+      <description>&lt;p&gt;#More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     
@@ -302,6 +332,16 @@ Figure 1: A fancy pie chart.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lethal Now or Lethal Later: The Natural History of Grade IV Blunt Cerebrovascular Injury</title>
+      <link>/publication/lauerman_blunt_cv_injury/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 -0400</pubDate>
+      
+      <guid>/publication/lauerman_blunt_cv_injury/</guid>
+      <description>&lt;p&gt;#More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>
     

@@ -44,6 +44,6 @@ weight = 5
   year = 2008
 +++
 
-# Biography
+# Hello and Welcome!
 
-I am currently a Post Doc at BU investigating the impact of race and and socioeconomic status on surgery outcomes. Additionally, I am studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.
+My name is Tim, and I am a Post Doc at Boston Univeristy. My current reserach involves investigating the impact of race and and socioeconomic status on surgery outcomes. I am also studying ways to improve follow up for incidentally discovered adrenal masses. This website is a work in progress.

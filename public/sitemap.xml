@@ -41,6 +41,24 @@
     
     <url>
     
+      <loc>/publication/promoter_2017/</loc>
+      <lastmod>2017-12-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/pho_hp_data_transfer/</loc>
+      <lastmod>2017-08-22T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/thryoid_nsqip/</loc>
       <lastmod>2017-08-22T00:00:00-04:00</lastmod>
     </url>
@@ -95,6 +113,15 @@
     
     <url>
     
+      <loc>/publication/blunt_cv_laser/</loc>
+      <lastmod>2016-12-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00-05:00</lastmod>
     </url>
@@ -106,6 +133,25 @@
     
       <loc>/post/2015-07-23-r-rmarkdown/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/lauerman_blunt_cv_injury/</loc>
+      <lastmod>2015-06-01T00:00:00-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication_types/1/</loc>
+      <lastmod>2017-08-22T00:00:00-04:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -173,7 +219,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2018-03-07T00:00:00-05:00</lastmod>
+      <lastmod>2017-08-22T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
