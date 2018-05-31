@@ -12,7 +12,7 @@ header:
 
 ## What is this blog about and what can I expect?
 
-This is my professional site. I am intersted broadly in STEM fields and may post on a wide range of topics from paper dissections, discussion of topics, and of course R for statistical analysis. 
+This is my professional site. I am interested broadly in STEM fields and may post on a wide range of topics from paper dissections, discussion of topics, and of course R for statistical analysis. 
 
 This tweet 
 
