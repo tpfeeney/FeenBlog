@@ -58,7 +58,7 @@ My name is Tim, and I am a Post Doc at Boston University. I have and MD and clin
 
 My broad research interests are outcomes after surgery. I am specifically intersted in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. Another research interest is finding ways to improve follow up for incidentally discovered adrenal masses. 
 
-My interests outside of science and math involves SCUBA diving on deep wrecks and in caves. I also spent a large chunk of my life as a firefighter and an EMT. Interesting fact about me is that I lived in a firehouse and volunteered in Prince Georges County Maryland for a portion of my undergraduate education.
+My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I also spent a large chunk of my life as a firefighter and an EMT. 
 
 Disclaimer: This website is a work in progress. All typos are intentional ;-)
 
