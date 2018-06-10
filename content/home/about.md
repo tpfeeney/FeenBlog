@@ -60,5 +60,5 @@ My broad research interests are outcomes after surgery. I am specifically inters
 
 My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I also spent a large chunk of my life as a firefighter and an EMT. 
 
-Disclaimer: This website is a work in progress. All typos are intentional ;-)
+Disclaimer: This website is a work in progress. All typos and grammatical errors are intentional ;-)
 
