@@ -18,9 +18,11 @@ weight = 5
     "R",
     "Paleontology",
     "Astrophysics",
+    "Marine Biology",
     "Real Analysis",
     "Science and Mathematics Education",
     "Broadly: Science and Mathematics",
+    "SCUBA Diving",
   ]
 
 # List your qualifications (such as academic degrees).
