@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/stats-software-compared-a-n00bs-viewpoint/</loc>
+      <lastmod>2018-06-10T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/intro-post/</loc>
       <lastmod>2018-05-31T00:00:00+00:00</lastmod>
     </url>
@@ -237,6 +246,16 @@
     
     <url>
     
+      <loc>/tags/r/</loc>
+      <lastmod>2018-06-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/categories/r/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -259,6 +278,36 @@
     
       <loc>/tags/regression/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/sas/</loc>
+      <lastmod>2018-06-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/software/</loc>
+      <lastmod>2018-06-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/stata/</loc>
+      <lastmod>2018-06-10T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

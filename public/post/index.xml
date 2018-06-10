@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Stats software compared: A n00bs Viewpoint</title>
+      <link>/post/stats-software-compared-a-n00bs-viewpoint/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/stats-software-compared-a-n00bs-viewpoint/</guid>
+      <description>While in my MPH training I had the opportunity to use (in class) both Stata and SAS. They were both great, but it became apparent during that time that serious stat were done with R. Further, visualizations that I saw from R packages like ggplot were just so much prettier than anything I saw in SAS or Stata.
+There were no specific classes to learn R during my MPH, but I was able to teach myself by taking free online class, googling answer, and just experimenting with my data and comparing it to other software I already knew.</description>
+    </item>
+    
+    <item>
       <title>Introduction Post</title>
       <link>/post/intro-post/</link>
       <pubDate>Thu, 31 May 2018 00:00:00 +0000</pubDate>
