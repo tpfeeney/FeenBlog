@@ -54,11 +54,11 @@ weight = 5
 
 # Hello and Welcome!
 
-My name is Tim, and I am a Post Doc at Boston University. I have and MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontolgy, and then astrophysics, and then an amalgam of other fields. Eventually I settled on molecular biology and medcine. Eventually I learned a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
+My name is Tim, and I am a Post Doc at Boston University. I have and MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontolgy, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad--I always loved the combination of physics, phycial chem, and chem when combined with biology, which mol bio does. Durgin medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science. 
 
-My broad research interests are outcomes after surgery. I am specifically intersted in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. Another research interest is finding ways to improve follow up for incidentally discovered adrenal masses. 
+My broad research interests are outcomes after surgery. I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. Another research interest is finding ways to improve follow up for incidentally discovered adrenal masses. 
 
-My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I also spent a large chunk of my life as a firefighter and an EMT. 
+My interests outside of science and math involve SCUBA diving on deep wrecks and in caves. I have also spent a large chunk of my life as a firefighter and an EMT. 
 
 Disclaimer: This website is a work in progress. All typos and grammatical errors are intentional ;-)
 

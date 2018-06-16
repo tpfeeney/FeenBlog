@@ -80,7 +80,7 @@
   <meta property="og:description" content="Post Doctoral Fellow">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2018-06-10T00:00:00&#43;00:00">
+  <meta property="og:updated_time" content="2018-06-16T00:00:00&#43;00:00">
   
 
   
@@ -251,11 +251,23 @@
   
   
   <div>
-    <h2><a href="/post/stats-software-compared-a-n00bs-viewpoint/">Stats software compared: A n00bs Viewpoint</a></h2>
+    <h2><a href="/post/how-to-visualize-binary-outcomes-in-research/">How to Visualize Binary Outcomes in Research</a></h2>
     <div class="article-style">
       
-      While in my MPH training I had the opportunity to use (in class) both Stata and SAS. They were both great, but it became apparent during that time that serious stat were done with R. Further, visualizations that I saw from R packages like ggplot were just so much prettier than anything I saw in SAS or Stata.
-There were no specific classes to learn R during my MPH, but I was able to teach myself by taking free online class, googling answer, and just experimenting with my data and comparing it to other software I already knew.
+      In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
+load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/post/how-to-visualize-binary-outcomes-in-research/">How to Visualize Binary Outcomes in Research</a></h2>
+    <div class="article-style">
+      
+      In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
+knitr::opts_chunk$set(collapse = TRUE)  ##load libraries
+library(tidyverse) library(ggpubr)  ##create the variables
+death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  ##combine into dataframe
       
     </div>
   </div>
