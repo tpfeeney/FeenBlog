@@ -330,7 +330,7 @@
 
 <h1 id="hello-and-welcome">Hello and Welcome!</h1>
 
-<p>My name is Tim, and I am a Post Doc at Boston University. I have and MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontolgy, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad&ndash;I always loved the combination of physics, phycial chem, and chem when combined with biology, which mol bio does. Durgin medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science.</p>
+<p>My name is Tim, and I am a Post Doc at Boston University. I have and MD and clinical training in general surgery. My interests are very broad and encompass every corner of STEM fields. I have always wanted to be a scientist in some capacity. Originally when I was very young it was paleontolgy, and then astrophysics, and then an amalgam of other fields. I eventually landed on molecular biology and medicine after falling in love in undergrad&ndash;I always loved the combination of physics, phycial chem, and chem when combined with biology, which mol bio does. During medical training, I developed a love of biostatistics and epidemiology as a way to study disease and combine a bunch of my interests: molecular biology, physiology, mathematics, computer science.</p>
 
 <p>My broad research interests are outcomes after surgery. I am specifically interested in ways to improve care, and understanding how social determinants of health impact outcomes after surgery. Another research interest is finding ways to improve follow up for incidentally discovered adrenal masses.</p>
 
@@ -947,86 +947,6 @@ load libraries library(tidyverse) library(ggpubr)  create the variables set.seed
       
           
       
-          
-      
-
-      
-      
-        
-        
-          
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2018-06-16 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-      Jun 16, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Timothy Feeney">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-
-  
-  
-  
-  
-
-  
-
-</div>
-
-
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/how-to-visualize-binary-outcomes-in-research/" itemprop="url">How to Visualize Binary Outcomes in Research</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-knitr::opts_chunk$set(collapse = TRUE)  ##load libraries
-library(tidyverse) library(ggpubr)  ##create the variables
-death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  ##combine into dataframe
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/how-to-visualize-binary-outcomes-in-research/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-        
-      
-
-      
-
-        
-
-        
-        
-
-        
-        
-          
-      
-          
-      
 
       
       
@@ -1081,6 +1001,86 @@ death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(100
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
     <a href="/post/clinical-significance-why-there-is-nothing-significant-about-it/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+        
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+          
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-06-10 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jun 10, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Timothy Feeney">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+
+</div>
+
+
+  
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/stats-software-compared-a-n00bs-viewpoint/" itemprop="url">Stats software compared: A n00bs Viewpoint</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    While in my MPH training I had the opportunity to use (in class) both Stata and SAS. They were both great, but it became apparent during that time that serious stat were done with R. Further, visualizations that I saw from R packages like ggplot were just so much prettier than anything I saw in SAS or Stata.
+There were no specific classes to learn R during my MPH, but I was able to teach myself by taking free online class, googling answer, and just experimenting with my data and comparing it to other software I already knew.
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/stats-software-compared-a-n00bs-viewpoint/" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
