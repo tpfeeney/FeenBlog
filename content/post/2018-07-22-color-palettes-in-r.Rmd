@@ -71,17 +71,27 @@ Rick and Morty
 show_col(pal_rickandmorty("schwifty")(12))
 ```
 
-#display overall Brewer colors
+#Display overall Brewer colors
 ```{r include=TRUE, warning=FALSE}
 display.brewer.all()
 ```
+```{r include=TRUE, warning=FALSE}
+brewer.pal.info
+```
 
 #Brewer Hex and Color palette
+BrBG
+can use:
 ```{r include=TRUE, warning=FALSE}
-brewer.pal(n=30,name="Set3")
+brewer.pal(n=11,name="BrBG")
 ```
 ```{r include=TRUE, warning=FALSE}
-display.brewer.pal(n=30,name="Set3")
+display.brewer.pal(n=11,name="BrBG")
+```
+
+or can use `show_col` command instead
+```{r include=TRUE, warning=FALSE}
+show_col(brewer_pal(palette = "BrBG")(11))
 ```
 
 #Wes Anderson Movie Color Themes
