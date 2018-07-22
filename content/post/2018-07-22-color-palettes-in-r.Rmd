@@ -24,6 +24,7 @@ library(scales)
 library(RColorBrewer)
 library(ggsci)
 library(wesanderson)
+library(ggthemes)
 ```
 
 #ggsci colors and Hex (not a complete list)
@@ -73,6 +74,37 @@ show_col(pal_simpsons("springfield")(16))
 Rick and Morty
 ```{r message=FALSE, warning=FALSE}
 show_col(pal_rickandmorty("schwifty")(12))
+```
+
+#ggthemes colors
+Stata
+```{r message=FALSE, warning=FALSE}
+show_col(stata_pal("s2color")(15))
+    show_col(stata_pal("s1rcolor")(15))
+    show_col(stata_pal("s1color")(15))
+    show_col(stata_pal("mono")(15))
+```
+
+538 theme colors
+```{r message=FALSE, warning=FALSE}
+show_col(fivethirtyeight_pal()(3))
+```
+
+google docs colors
+```{r message=FALSE, warning=FALSE}
+show_col(gdocs_pal()(20))
+```
+economist
+```{r message=FALSE, warning=FALSE}
+show_col(economist_pal()(6))
+    ## fill palette
+    show_col(economist_pal(fill = TRUE)(6))
+    ```
+
+
+colorblind
+```{r message=FALSE, warning=FALSE}
+show_col(colorblind_pal()(8))
 ```
 
 #Display overall Brewer colors
