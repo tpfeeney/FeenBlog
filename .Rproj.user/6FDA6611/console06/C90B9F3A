@@ -316,4 +316,54 @@ INFO 2018/05/28 16:41:42 Alias "/tags/page/1/index.html" translated to "tags/pag
   Cleaned          |  0  
 
 Total in 143 ms
-]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ [KTims-MacBook-2:FeenBlog tim$ 
+[KTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/07/22 14:49:39 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/07/22 14:49:39 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/07/22 14:49:39 found taxonomies: map[string]string{"tag":"tags", "category":"categories", "publication_type":"publication_types"}
+ERROR 2018/07/22 14:49:39 Error while rendering "page" in "post/": template: theme/_default/single.html:17:7: executing "theme/_default/single.html" at <partial "tags.html" ...>: error calling partial: template: theme/partials/tags.html:5:22: executing "theme/partials/tags.html" at <$.Params.tags>: range can't iterate over R
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$  asdf[K[K[K[K[Khugo -v
+INFO 2018/07/22 14:51:07 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/07/22 14:51:07 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/07/22 14:51:07 found taxonomies: map[string]string{"publication_type":"publication_types", "tag":"tags", "category":"categories"}
+ERROR 2018/07/22 14:51:07 Error while rendering "page" in "post/": template: theme/_default/single.html:17:7: executing "theme/_default/single.html" at <partial "tags.html" ...>: error calling partial: template: theme/partials/tags.html:5:22: executing "theme/partials/tags.html" at <$.Params.tags>: range can't iterate over R
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ hugo -vssh tfeeney@scc4.bu.eduhug[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khugo -v
+INFO 2018/07/22 14:51:55 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/07/22 14:51:55 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/07/22 14:51:55 found taxonomies: map[string]string{"tag":"tags", "category":"categories", "publication_type":"publication_types"}
+ERROR 2018/07/22 14:51:55 The `projects` parameter in `content/talk/example-talk.md` references a project file, `content/project/deep-learning.md`, which cannot be found. Please either set `projects = []` or fix the reference.
+INFO 2018/07/22 14:51:55 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/publication_types/1/page/1/index.html" translated to "publication_types/1/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/aiqip/page/1/index.html" translated to "tags/aiqip/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/clinical-epi/page/1/index.html" translated to "tags/clinical-epi/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/data-analysis/page/1/index.html" translated to "tags/data-analysis/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/dplyr/page/1/index.html" translated to "tags/dplyr/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/language-outcomes/page/1/index.html" translated to "tags/language-outcomes/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/r/page/1/index.html" translated to "tags/r/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/r/page/1/index.html" translated to "tags/r/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/sas/page/1/index.html" translated to "tags/sas/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/software/page/1/index.html" translated to "tags/software/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/stats/page/1/index.html" translated to "tags/stats/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+INFO 2018/07/22 14:51:55 Alias "/tags/stata/page/1/index.html" translated to "tags/stata/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 50  
+  Paginator pages  |  1  
+  Non-page files   |  0  
+  Static files     | 58  
+  Processed images |  0  
+  Aliases          | 22  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 179 ms
+]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 

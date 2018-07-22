@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.">
+  <meta name="description" content="Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/color-palettes-in-r/">
@@ -79,7 +79,7 @@
   <meta property="og:site_name" content="The Feeney">
   <meta property="og:url" content="/post/color-palettes-in-r/">
   <meta property="og:title" content="Color Palettes in R | The Feeney">
-  <meta property="og:description" content="Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.">
+  <meta property="og:description" content="Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-07-22T00:00:00&#43;00:00">
@@ -268,7 +268,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
@@ -328,7 +328,7 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      <p>Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. <code>tidyverse</code> and <code>ggplot</code> in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the <code>ggsci</code> package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.</p>
+      <p>Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. <code>tidyverse</code> and <code>ggplot</code> in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the <code>ggsci</code> package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.</p>
 <div id="libraries" class="section level1">
 <h1>libraries</h1>
 <pre class="r"><code>library(tidyverse)
@@ -372,17 +372,58 @@ library(wesanderson)</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>
 <div id="display-overall-brewer-colors" class="section level1">
-<h1>display overall Brewer colors</h1>
+<h1>Display overall Brewer colors</h1>
 <pre class="r"><code>display.brewer.all()</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code>brewer.pal.info</code></pre>
+<pre><code>##          maxcolors category colorblind
+## BrBG            11      div       TRUE
+## PiYG            11      div       TRUE
+## PRGn            11      div       TRUE
+## PuOr            11      div       TRUE
+## RdBu            11      div       TRUE
+## RdGy            11      div      FALSE
+## RdYlBu          11      div       TRUE
+## RdYlGn          11      div      FALSE
+## Spectral        11      div      FALSE
+## Accent           8     qual      FALSE
+## Dark2            8     qual       TRUE
+## Paired          12     qual       TRUE
+## Pastel1          9     qual      FALSE
+## Pastel2          8     qual      FALSE
+## Set1             9     qual      FALSE
+## Set2             8     qual       TRUE
+## Set3            12     qual      FALSE
+## Blues            9      seq       TRUE
+## BuGn             9      seq       TRUE
+## BuPu             9      seq       TRUE
+## GnBu             9      seq       TRUE
+## Greens           9      seq       TRUE
+## Greys            9      seq       TRUE
+## Oranges          9      seq       TRUE
+## OrRd             9      seq       TRUE
+## PuBu             9      seq       TRUE
+## PuBuGn           9      seq       TRUE
+## PuRd             9      seq       TRUE
+## Purples          9      seq       TRUE
+## RdPu             9      seq       TRUE
+## Reds             9      seq       TRUE
+## YlGn             9      seq       TRUE
+## YlGnBu           9      seq       TRUE
+## YlOrBr           9      seq       TRUE
+## YlOrRd           9      seq       TRUE</code></pre>
 </div>
 <div id="brewer-hex-and-color-palette" class="section level1">
 <h1>Brewer Hex and Color palette</h1>
-<pre class="r"><code>brewer.pal(n=30,name=&quot;Set3&quot;)</code></pre>
-<pre><code>##  [1] &quot;#8DD3C7&quot; &quot;#FFFFB3&quot; &quot;#BEBADA&quot; &quot;#FB8072&quot; &quot;#80B1D3&quot; &quot;#FDB462&quot; &quot;#B3DE69&quot;
-##  [8] &quot;#FCCDE5&quot; &quot;#D9D9D9&quot; &quot;#BC80BD&quot; &quot;#CCEBC5&quot; &quot;#FFED6F&quot;</code></pre>
-<pre class="r"><code>display.brewer.pal(n=30,name=&quot;Set3&quot;)</code></pre>
-<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>BrBG can use:</p>
+<pre class="r"><code>brewer.pal(n=11,name=&quot;BrBG&quot;)</code></pre>
+<pre><code>##  [1] &quot;#543005&quot; &quot;#8C510A&quot; &quot;#BF812D&quot; &quot;#DFC27D&quot; &quot;#F6E8C3&quot; &quot;#F5F5F5&quot; &quot;#C7EAE5&quot;
+##  [8] &quot;#80CDC1&quot; &quot;#35978F&quot; &quot;#01665E&quot; &quot;#003C30&quot;</code></pre>
+<pre class="r"><code>display.brewer.pal(n=11,name=&quot;BrBG&quot;)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>or can use <code>show_col</code> command instead</p>
+<pre class="r"><code>show_col(brewer_pal(palette = &quot;BrBG&quot;)(11))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
 </div>
 <div id="wes-anderson-movie-color-themes" class="section level1">
 <h1>Wes Anderson Movie Color Themes</h1>
@@ -443,11 +484,56 @@ library(wesanderson)</code></pre>
 ## 
 ## $IsleofDogs2
 ## [1] &quot;#EAD3BF&quot; &quot;#AA9486&quot; &quot;#B6854D&quot; &quot;#39312F&quot; &quot;#1C1718&quot;</code></pre>
+<p>Bottle Rocket 1</p>
+<pre class="r"><code>show_col(wes_palettes$BottleRocket1,(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Bottle Rocket 2</p>
+<pre class="r"><code>show_col(wes_palettes$BottleRocket2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>Rushmore 1</p>
+<pre class="r"><code>show_col(wes_palettes$Rushmore1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>Royal 1</p>
+<pre class="r"><code>show_col(wes_palettes$Royal1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>Royal 2</p>
+<pre class="r"><code>show_col(wes_palettes$Royal2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>Zissou1</p>
+<pre class="r"><code>show_col(wes_palettes$Zissou1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>Darjeeling1</p>
+<pre class="r"><code>show_col(wes_palettes$Darjeeling1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-23-1.png" width="672" /> Darjeeling2</p>
+<pre class="r"><code>show_col(wes_palettes$Darjeeling2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>Fantastic Fox 1</p>
+<pre class="r"><code>show_col(wes_palettes$FantasticFox1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>Moonrise1</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>Moonrise2</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>Moonrise3</p>
+<pre class="r"><code>show_col(wes_palettes$Moonrise3)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p>GrandBudapest1</p>
+<pre class="r"><code>show_col(wes_palettes$GrandBudapest1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p>GrandBudapest2</p>
+<pre class="r"><code>show_col(wes_palettes$GrandBudapest2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p>IsleofDogs1</p>
+<pre class="r"><code>show_col(wes_palettes$IsleofDogs1)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p>IsleofDogs2</p>
+<pre class="r"><code>show_col(wes_palettes$IsleofDogs2)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
 </div>
-<div id="wes-anderson-movie-color-themes-1" class="section level1">
-<h1>Wes Anderson Movie Color Themes</h1>
-<pre class="r"><code>show_col(wes_palettes$BottleRocket1)</code></pre>
-<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png" width="672" /> #References:</p>
+<div id="references" class="section level1">
+<h1>References:</h1>
 <p><a href="https://rpubs.com/anhld/169514" class="uri">https://rpubs.com/anhld/169514</a> <a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf" class="uri">https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf</a> <a href="https://cran.r-project.org/web/packages/ggsci/ggsci.pdf" class="uri">https://cran.r-project.org/web/packages/ggsci/ggsci.pdf</a> <a href="http://www.sthda.com/english/wiki/colors-in-r" class="uri">http://www.sthda.com/english/wiki/colors-in-r</a></p>
 </div>
 

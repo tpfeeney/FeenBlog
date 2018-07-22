@@ -10,7 +10,8 @@ header:
   caption: ''
   image: ''
 slug: color-palettes-in-r
-tags: R
+tags: 
+- R
 categories: []
 ---
 
@@ -104,7 +105,7 @@ wes_palettes
 
 Bottle Rocket 1
 ```{r include=TRUE, warning=FALSE}
-show_col(wes_palettes$BottleRocket1)
+show_col(wes_palettes$BottleRocket1,(7))
 ```
 
 Bottle Rocket 2

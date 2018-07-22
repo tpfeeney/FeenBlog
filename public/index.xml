@@ -16,7 +16,7 @@
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/color-palettes-in-r/</guid>
-      <description>&lt;p&gt;Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
+      <description>&lt;p&gt;Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
 &lt;div id=&#34;libraries&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;libraries&lt;/h1&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
@@ -60,17 +60,58 @@ library(wesanderson)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;display-overall-brewer-colors&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;display overall Brewer colors&lt;/h1&gt;
+&lt;h1&gt;Display overall Brewer colors&lt;/h1&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.all()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal.info&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          maxcolors category colorblind
+## BrBG            11      div       TRUE
+## PiYG            11      div       TRUE
+## PRGn            11      div       TRUE
+## PuOr            11      div       TRUE
+## RdBu            11      div       TRUE
+## RdGy            11      div      FALSE
+## RdYlBu          11      div       TRUE
+## RdYlGn          11      div      FALSE
+## Spectral        11      div      FALSE
+## Accent           8     qual      FALSE
+## Dark2            8     qual       TRUE
+## Paired          12     qual       TRUE
+## Pastel1          9     qual      FALSE
+## Pastel2          8     qual      FALSE
+## Set1             9     qual      FALSE
+## Set2             8     qual       TRUE
+## Set3            12     qual      FALSE
+## Blues            9      seq       TRUE
+## BuGn             9      seq       TRUE
+## BuPu             9      seq       TRUE
+## GnBu             9      seq       TRUE
+## Greens           9      seq       TRUE
+## Greys            9      seq       TRUE
+## Oranges          9      seq       TRUE
+## OrRd             9      seq       TRUE
+## PuBu             9      seq       TRUE
+## PuBuGn           9      seq       TRUE
+## PuRd             9      seq       TRUE
+## Purples          9      seq       TRUE
+## RdPu             9      seq       TRUE
+## Reds             9      seq       TRUE
+## YlGn             9      seq       TRUE
+## YlGnBu           9      seq       TRUE
+## YlOrBr           9      seq       TRUE
+## YlOrRd           9      seq       TRUE&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;brewer-hex-and-color-palette&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Brewer Hex and Color palette&lt;/h1&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal(n=30,name=&amp;quot;Set3&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;#8DD3C7&amp;quot; &amp;quot;#FFFFB3&amp;quot; &amp;quot;#BEBADA&amp;quot; &amp;quot;#FB8072&amp;quot; &amp;quot;#80B1D3&amp;quot; &amp;quot;#FDB462&amp;quot; &amp;quot;#B3DE69&amp;quot;
-##  [8] &amp;quot;#FCCDE5&amp;quot; &amp;quot;#D9D9D9&amp;quot; &amp;quot;#BC80BD&amp;quot; &amp;quot;#CCEBC5&amp;quot; &amp;quot;#FFED6F&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.pal(n=30,name=&amp;quot;Set3&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;BrBG can use:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal(n=11,name=&amp;quot;BrBG&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;#543005&amp;quot; &amp;quot;#8C510A&amp;quot; &amp;quot;#BF812D&amp;quot; &amp;quot;#DFC27D&amp;quot; &amp;quot;#F6E8C3&amp;quot; &amp;quot;#F5F5F5&amp;quot; &amp;quot;#C7EAE5&amp;quot;
+##  [8] &amp;quot;#80CDC1&amp;quot; &amp;quot;#35978F&amp;quot; &amp;quot;#01665E&amp;quot; &amp;quot;#003C30&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.pal(n=11,name=&amp;quot;BrBG&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;or can use &lt;code&gt;show_col&lt;/code&gt; command instead&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(brewer_pal(palette = &amp;quot;BrBG&amp;quot;)(11))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;wes-anderson-movie-color-themes&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Wes Anderson Movie Color Themes&lt;/h1&gt;
@@ -131,11 +172,56 @@ library(wesanderson)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## $IsleofDogs2
 ## [1] &amp;quot;#EAD3BF&amp;quot; &amp;quot;#AA9486&amp;quot; &amp;quot;#B6854D&amp;quot; &amp;quot;#39312F&amp;quot; &amp;quot;#1C1718&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bottle Rocket 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket1,(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Bottle Rocket 2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Rushmore 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Rushmore1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Royal 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Royal1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Royal 2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Royal2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Zissou1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Zissou1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Darjeeling1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt; Darjeeling2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Fantastic Fox 1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$FantasticFox1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Moonrise3&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Moonrise3)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;GrandBudapest1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$GrandBudapest1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;GrandBudapest2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$GrandBudapest2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;IsleofDogs1&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$IsleofDogs1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;IsleofDogs2&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$IsleofDogs2)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;wes-anderson-movie-color-themes-1&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Wes Anderson Movie Color Themes&lt;/h1&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt; #References:&lt;/p&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;References:&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt; &lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt; &lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
