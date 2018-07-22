@@ -1,0 +1,74 @@
+---
+title: Color Palettes in R
+author: TF
+date: '2018-07-22'
+slug: color-palettes-in-r
+categories: []
+tags:
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. <code>tidyverse</code> and <code>ggplot</code> in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the <code>ggsci</code> package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.</p>
+<div id="libraries" class="section level1">
+<h1>libraries</h1>
+<pre class="r"><code>library(tidyverse)
+library(scales)
+library(RColorBrewer)
+library(ggsci)</code></pre>
+</div>
+<div id="ggsci-colors-and-hex-not-a-complete-list" class="section level1">
+<h1>ggsci colors and Hex (not a complete list)</h1>
+<p>JAMA</p>
+<pre class="r"><code>show_col(pal_jama(&quot;default&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>NEJM</p>
+<pre class="r"><code>show_col(pal_nejm(&quot;default&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>nature publishing group</p>
+<pre class="r"><code>show_col(pal_npg(&quot;nrc&quot;)(10))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Univof Chicago</p>
+<pre class="r"><code>show_col(pal_uchicago(&quot;default&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>    show_col(pal_uchicago(&quot;light&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<pre class="r"><code>    show_col(pal_uchicago(&quot;dark&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-3.png" width="672" /></p>
+<p>J of Clin Oncology</p>
+<pre class="r"><code>show_col(pal_jco(&quot;default&quot;)(10))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Lancet</p>
+<pre class="r"><code>show_col(pal_lancet(&quot;lanonc&quot;)(9))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Star Trek</p>
+<pre class="r"><code>show_col(pal_startrek(&quot;uniform&quot;)(7))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Simpsons</p>
+<pre class="r"><code>show_col(pal_simpsons(&quot;springfield&quot;)(16))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Rick and Morty</p>
+<pre class="r"><code>show_col(pal_rickandmorty(&quot;schwifty&quot;)(12))</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+</div>
+<div id="display-overall-brewer-colors" class="section level1">
+<h1>display overall Brewer colors</h1>
+<pre class="r"><code>display.brewer.all()</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="brewer-hex-and-color-palette" class="section level1">
+<h1>Brewer Hex and Color palette</h1>
+<pre class="r"><code>brewer.pal(n=30,name=&quot;Set3&quot;)</code></pre>
+<pre><code>##  [1] &quot;#8DD3C7&quot; &quot;#FFFFB3&quot; &quot;#BEBADA&quot; &quot;#FB8072&quot; &quot;#80B1D3&quot; &quot;#FDB462&quot; &quot;#B3DE69&quot;
+##  [8] &quot;#FCCDE5&quot; &quot;#D9D9D9&quot; &quot;#BC80BD&quot; &quot;#CCEBC5&quot; &quot;#FFED6F&quot;</code></pre>
+<pre class="r"><code>display.brewer.pal(n=30,name=&quot;Set3&quot;)</code></pre>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+</div>
+<div id="references" class="section level1">
+<h1>References:</h1>
+<p><a href="https://rpubs.com/anhld/169514" class="uri">https://rpubs.com/anhld/169514</a> <a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf" class="uri">https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf</a> <a href="https://cran.r-project.org/web/packages/ggsci/ggsci.pdf" class="uri">https://cran.r-project.org/web/packages/ggsci/ggsci.pdf</a> <a href="http://www.sthda.com/english/wiki/colors-in-r" class="uri">http://www.sthda.com/english/wiki/colors-in-r</a></p>
+</div>

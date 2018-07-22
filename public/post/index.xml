@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Color Palettes in R</title>
+      <link>/post/color-palettes-in-r/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/color-palettes-in-r/</guid>
+      <description>Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.</description>
+    </item>
+    
+    <item>
       <title>How to Visualize Binary Outcomes in Research</title>
       <link>/post/how-to-visualize-binary-outcomes-in-research/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>

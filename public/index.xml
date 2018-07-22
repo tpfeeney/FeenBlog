@@ -11,6 +11,74 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Color Palettes in R</title>
+      <link>/post/color-palettes-in-r/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/color-palettes-in-r/</guid>
+      <description>&lt;p&gt;Colors. Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
+&lt;div id=&#34;libraries&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;libraries&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(scales)
+library(RColorBrewer)
+library(ggsci)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ggsci-colors-and-hex-not-a-complete-list&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;ggsci colors and Hex (not a complete list)&lt;/h1&gt;
+&lt;p&gt;JAMA&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_jama(&amp;quot;default&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;NEJM&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_nejm(&amp;quot;default&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;nature publishing group&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_npg(&amp;quot;nrc&amp;quot;)(10))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Univof Chicago&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_uchicago(&amp;quot;default&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(pal_uchicago(&amp;quot;light&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(pal_uchicago(&amp;quot;dark&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-5-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;J of Clin Oncology&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_jco(&amp;quot;default&amp;quot;)(10))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lancet&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_lancet(&amp;quot;lanonc&amp;quot;)(9))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Star Trek&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_startrek(&amp;quot;uniform&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Simpsons&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_simpsons(&amp;quot;springfield&amp;quot;)(16))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Rick and Morty&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_rickandmorty(&amp;quot;schwifty&amp;quot;)(12))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;display-overall-brewer-colors&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;display overall Brewer colors&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.all()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;brewer-hex-and-color-palette&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Brewer Hex and Color palette&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal(n=30,name=&amp;quot;Set3&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;#8DD3C7&amp;quot; &amp;quot;#FFFFB3&amp;quot; &amp;quot;#BEBADA&amp;quot; &amp;quot;#FB8072&amp;quot; &amp;quot;#80B1D3&amp;quot; &amp;quot;#FDB462&amp;quot; &amp;quot;#B3DE69&amp;quot;
+##  [8] &amp;quot;#FCCDE5&amp;quot; &amp;quot;#D9D9D9&amp;quot; &amp;quot;#BC80BD&amp;quot; &amp;quot;#CCEBC5&amp;quot; &amp;quot;#FFED6F&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.pal(n=30,name=&amp;quot;Set3&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;References:&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt; &lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt; &lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to Visualize Binary Outcomes in Research</title>
       <link>/post/how-to-visualize-binary-outcomes-in-research/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>
@@ -446,54 +514,6 @@ git submodule update --init --recursive
 &lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
