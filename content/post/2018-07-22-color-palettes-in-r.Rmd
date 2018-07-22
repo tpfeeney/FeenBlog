@@ -19,6 +19,7 @@ library(tidyverse)
 library(scales)
 library(RColorBrewer)
 library(ggsci)
+library(wesanderson)
 ```
 
 #ggsci colors and Hex (not a complete list)
@@ -81,6 +82,95 @@ brewer.pal(n=30,name="Set3")
 ```
 ```{r include=TRUE, warning=FALSE}
 display.brewer.pal(n=30,name="Set3")
+```
+
+#Wes Anderson Movie Color Themes
+```{r include=TRUE, warning=FALSE}
+wes_palettes
+```
+
+Bottle Rocket 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$BottleRocket1)
+```
+
+Bottle Rocket 2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$BottleRocket2)
+```
+
+Rushmore 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Rushmore1)
+```
+
+Rushmore 2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Rushmore2)
+```
+
+Royal 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Royal1)
+```
+
+Royal 2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Royal2)
+```
+
+Zissou1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Zissou1)
+```
+
+Darjeeling1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Darjeeling1)
+```
+Darjeeling2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Darjeeling2)
+```
+
+Fantastic Fox 1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$FantasticFox1)
+```
+
+Moonrise1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise1)
+```
+
+Moonrise2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise2)
+```
+
+Moonrise3
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$Moonrise3)
+```
+
+GrandBudapest1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$GrandBudapest1)
+```
+
+GrandBudapest2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$GrandBudapest2)
+```
+
+IsleofDogs1
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$IsleofDogs1)
+```
+
+IsleofDogs2
+```{r include=TRUE, warning=FALSE}
+show_col(wes_palettes$IsleofDogs2)
 ```
 
 #References:

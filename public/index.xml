@@ -22,7 +22,8 @@
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(scales)
 library(RColorBrewer)
-library(ggsci)&lt;/code&gt;&lt;/pre&gt;
+library(ggsci)
+library(wesanderson)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;ggsci-colors-and-hex-not-a-complete-list&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;ggsci colors and Hex (not a complete list)&lt;/h1&gt;
@@ -71,8 +72,70 @@ library(ggsci)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.pal(n=30,name=&amp;quot;Set3&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;References:&lt;/h1&gt;
+&lt;div id=&#34;wes-anderson-movie-color-themes&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Wes Anderson Movie Color Themes&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wes_palettes&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $BottleRocket1
+## [1] &amp;quot;#A42820&amp;quot; &amp;quot;#5F5647&amp;quot; &amp;quot;#9B110E&amp;quot; &amp;quot;#3F5151&amp;quot; &amp;quot;#4E2A1E&amp;quot; &amp;quot;#550307&amp;quot; &amp;quot;#0C1707&amp;quot;
+## 
+## $BottleRocket2
+## [1] &amp;quot;#FAD510&amp;quot; &amp;quot;#CB2314&amp;quot; &amp;quot;#273046&amp;quot; &amp;quot;#354823&amp;quot; &amp;quot;#1E1E1E&amp;quot;
+## 
+## $Rushmore1
+## [1] &amp;quot;#E1BD6D&amp;quot; &amp;quot;#EABE94&amp;quot; &amp;quot;#0B775E&amp;quot; &amp;quot;#35274A&amp;quot; &amp;quot;#F2300F&amp;quot;
+## 
+## $Rushmore
+## [1] &amp;quot;#E1BD6D&amp;quot; &amp;quot;#EABE94&amp;quot; &amp;quot;#0B775E&amp;quot; &amp;quot;#35274A&amp;quot; &amp;quot;#F2300F&amp;quot;
+## 
+## $Royal1
+## [1] &amp;quot;#899DA4&amp;quot; &amp;quot;#C93312&amp;quot; &amp;quot;#FAEFD1&amp;quot; &amp;quot;#DC863B&amp;quot;
+## 
+## $Royal2
+## [1] &amp;quot;#9A8822&amp;quot; &amp;quot;#F5CDB4&amp;quot; &amp;quot;#F8AFA8&amp;quot; &amp;quot;#FDDDA0&amp;quot; &amp;quot;#74A089&amp;quot;
+## 
+## $Zissou1
+## [1] &amp;quot;#3B9AB2&amp;quot; &amp;quot;#78B7C5&amp;quot; &amp;quot;#EBCC2A&amp;quot; &amp;quot;#E1AF00&amp;quot; &amp;quot;#F21A00&amp;quot;
+## 
+## $Darjeeling1
+## [1] &amp;quot;#FF0000&amp;quot; &amp;quot;#00A08A&amp;quot; &amp;quot;#F2AD00&amp;quot; &amp;quot;#F98400&amp;quot; &amp;quot;#5BBCD6&amp;quot;
+## 
+## $Darjeeling2
+## [1] &amp;quot;#ECCBAE&amp;quot; &amp;quot;#046C9A&amp;quot; &amp;quot;#D69C4E&amp;quot; &amp;quot;#ABDDDE&amp;quot; &amp;quot;#000000&amp;quot;
+## 
+## $Chevalier1
+## [1] &amp;quot;#446455&amp;quot; &amp;quot;#FDD262&amp;quot; &amp;quot;#D3DDDC&amp;quot; &amp;quot;#C7B19C&amp;quot;
+## 
+## $FantasticFox1
+## [1] &amp;quot;#DD8D29&amp;quot; &amp;quot;#E2D200&amp;quot; &amp;quot;#46ACC8&amp;quot; &amp;quot;#E58601&amp;quot; &amp;quot;#B40F20&amp;quot;
+## 
+## $Moonrise1
+## [1] &amp;quot;#F3DF6C&amp;quot; &amp;quot;#CEAB07&amp;quot; &amp;quot;#D5D5D3&amp;quot; &amp;quot;#24281A&amp;quot;
+## 
+## $Moonrise2
+## [1] &amp;quot;#798E87&amp;quot; &amp;quot;#C27D38&amp;quot; &amp;quot;#CCC591&amp;quot; &amp;quot;#29211F&amp;quot;
+## 
+## $Moonrise3
+## [1] &amp;quot;#85D4E3&amp;quot; &amp;quot;#F4B5BD&amp;quot; &amp;quot;#9C964A&amp;quot; &amp;quot;#CDC08C&amp;quot; &amp;quot;#FAD77B&amp;quot;
+## 
+## $Cavalcanti1
+## [1] &amp;quot;#D8B70A&amp;quot; &amp;quot;#02401B&amp;quot; &amp;quot;#A2A475&amp;quot; &amp;quot;#81A88D&amp;quot; &amp;quot;#972D15&amp;quot;
+## 
+## $GrandBudapest1
+## [1] &amp;quot;#F1BB7B&amp;quot; &amp;quot;#FD6467&amp;quot; &amp;quot;#5B1A18&amp;quot; &amp;quot;#D67236&amp;quot;
+## 
+## $GrandBudapest2
+## [1] &amp;quot;#E6A0C4&amp;quot; &amp;quot;#C6CDF7&amp;quot; &amp;quot;#D8A499&amp;quot; &amp;quot;#7294D4&amp;quot;
+## 
+## $IsleofDogs1
+## [1] &amp;quot;#9986A5&amp;quot; &amp;quot;#79402E&amp;quot; &amp;quot;#CCBA72&amp;quot; &amp;quot;#0F0D0E&amp;quot; &amp;quot;#D9D0D3&amp;quot; &amp;quot;#8D8680&amp;quot;
+## 
+## $IsleofDogs2
+## [1] &amp;quot;#EAD3BF&amp;quot; &amp;quot;#AA9486&amp;quot; &amp;quot;#B6854D&amp;quot; &amp;quot;#39312F&amp;quot; &amp;quot;#1C1718&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;wes-anderson-movie-color-themes-1&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Wes Anderson Movie Color Themes&lt;/h1&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$BottleRocket1)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt; #References:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt; &lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt; &lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
