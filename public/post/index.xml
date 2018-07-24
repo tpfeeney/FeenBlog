@@ -22,6 +22,17 @@
     </item>
     
     <item>
+      <title>Misc Functions in R</title>
+      <link>/post/misc-functions-in-r/</link>
+      <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/misc-functions-in-r/</guid>
+      <description>This post is VERY in progress. The point is as a reference for myself for simulating data and working with probability distributions.
+References: http://seankross.com/notes/dpqr/ http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html
+ </description>
+    </item>
+    
+    <item>
       <title>How to Visualize Binary Outcomes in Research</title>
       <link>/post/how-to-visualize-binary-outcomes-in-research/</link>
       <pubDate>Sat, 16 Jun 2018 00:00:00 +0000</pubDate>

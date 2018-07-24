@@ -1,0 +1,18 @@
+---
+title: Misc Functions in R
+author: TF
+date: '2018-07-22'
+slug: misc-functions-in-r
+categories: []
+tags: [R]
+header:
+  caption: ''
+  image: ''
+---
+
+This post is VERY in progress. The point is as a reference for myself for simulating data and working with probability distributions.
+
+#References:
+http://seankross.com/notes/dpqr/
+http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf
+https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html

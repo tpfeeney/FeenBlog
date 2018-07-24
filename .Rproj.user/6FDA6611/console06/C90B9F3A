@@ -366,4 +366,44 @@ INFO 2018/07/22 14:51:55 Alias "/tags/stata/page/1/index.html" translated to "ta
   Cleaned          |  0  
 
 Total in 179 ms
+[KTims-MacBook-2:FeenBlog tim$ hugo -v
+INFO 2018/07/22 18:33:49 Using config file: /Users/tim/Documents/GitHub/FeenBlog/config.toml
+[?25lBuilding sites … INFO 2018/07/22 18:33:49 syncing static files to /Users/tim/Documents/GitHub/FeenBlog/public/
+INFO 2018/07/22 18:33:49 found taxonomies: map[string]string{"category":"categories", "publication_type":"publication_types", "tag":"tags"}
+ERROR 2018/07/22 18:33:49 The `projects` parameter in `content/talk/example-talk.md` references a project file, `content/project/deep-learning.md`, which cannot be found. Please either set `projects = []` or fix the reference.
+INFO 2018/07/22 18:33:49 Alias "/tags/academic/page/1/index.html" translated to "tags/academic/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/post/page/1/index.html" translated to "post/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/publication_types/1/page/1/index.html" translated to "publication_types/1/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/publication_types/2/page/1/index.html" translated to "publication_types/2/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/aiqip/page/1/index.html" translated to "tags/aiqip/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/categories/page/1/index.html" translated to "categories/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/clinical-epi/page/1/index.html" translated to "tags/clinical-epi/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/data-analysis/page/1/index.html" translated to "tags/data-analysis/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/dplyr/page/1/index.html" translated to "tags/dplyr/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/plot/page/1/index.html" translated to "tags/plot/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/language-outcomes/page/1/index.html" translated to "tags/language-outcomes/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/publication_types/page/1/index.html" translated to "publication_types/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/r/page/1/index.html" translated to "tags/r/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/r/page/1/index.html" translated to "tags/r/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/regression/page/1/index.html" translated to "tags/regression/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/categories/r/page/1/index.html" translated to "categories/r/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/r-markdown/page/1/index.html" translated to "tags/r-markdown/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/sas/page/1/index.html" translated to "tags/sas/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/stats/page/1/index.html" translated to "tags/stats/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/software/page/1/index.html" translated to "tags/software/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/stata/page/1/index.html" translated to "tags/stata/page/1/index.html"
+INFO 2018/07/22 18:33:49 Alias "/tags/page/1/index.html" translated to "tags/page/1/index.html"
+[?25h[K
+                   | EN  
++------------------+----+
+  Pages            | 51  
+  Paginator pages  |  1  
+  Non-page files   |  0  
+  Static files     | 70  
+  Processed images |  0  
+  Aliases          | 22  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 194 ms
 ]0;~/Documents/GitHub/FeenBlogTims-MacBook-2:FeenBlog tim$ 

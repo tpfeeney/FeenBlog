@@ -221,3 +221,4 @@ https://rpubs.com/anhld/169514
 https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf
 https://cran.r-project.org/web/packages/ggsci/ggsci.pdf
 http://www.sthda.com/english/wiki/colors-in-r
+https://github.com/EmilHvitfeldt/r-color-palettes
