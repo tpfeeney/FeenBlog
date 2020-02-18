@@ -34,7 +34,7 @@ selected = true
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename of your project in `content/project/`.
 #   Otherwise, set `projects = []`.
-projects = content/project/aiqip
+projects = []
 
 # Links (optional).
 url_pdf = ""
