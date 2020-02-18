@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.33" />
+  <meta name="generator" content="Hugo 0.60.1" />
   <meta name="author" content="Timothy Feeney">
 
   
@@ -59,8 +59,8 @@
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="The Feeney">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="The Feeney">
+  <link rel="alternate" href="/tags/dplyr/index.xml" type="application/rss+xml" title="The Feeney">
+  <link rel="feed" href="/tags/dplyr/index.xml" type="application/rss+xml" title="The Feeney">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,7 +76,7 @@
   
   <meta property="og:site_name" content="The Feeney">
   <meta property="og:url" content="/tags/dplyr/">
-  <meta property="og:title" content="Dplyr | The Feeney">
+  <meta property="og:title" content="dplyr | The Feeney">
   <meta property="og:description" content="Post Doctoral Fellow">
   <meta property="og:locale" content="en-us">
   
@@ -86,7 +86,7 @@
   
   
 
-  <title>Dplyr | The Feeney</title>
+  <title>dplyr | The Feeney</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" class="dark">
@@ -244,7 +244,7 @@
 
 <div class="universal-wrapper">
 
-  <h1>Dplyr</h1>
+  <h1>dplyr</h1>
 
   
 
@@ -255,7 +255,10 @@
     <div class="article-style">
       
       In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.
+###load libraries
+library(tidyverse) library(ggpubr) ###create the variables
+set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2) ###combine into dataframe
+x &lt;- data.frame(death,readmit,id) names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;) ###check the results
       
     </div>
   </div>
@@ -269,7 +272,7 @@ load libraries library(tidyverse) library(ggpubr)  create the variables set.seed
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2018 Tim Feeney &middot; 
+      © 2018 Tim Feeney &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

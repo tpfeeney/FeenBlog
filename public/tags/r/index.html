@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.33" />
+  <meta name="generator" content="Hugo 0.60.1" />
   <meta name="author" content="Timothy Feeney">
 
   
@@ -59,8 +59,8 @@
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="The Feeney">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="The Feeney">
+  <link rel="alternate" href="/tags/r/index.xml" type="application/rss+xml" title="The Feeney">
+  <link rel="feed" href="/tags/r/index.xml" type="application/rss+xml" title="The Feeney">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -254,7 +254,7 @@
     <h2><a href="/post/color-palettes-in-r/">Color Palettes in R</a></h2>
     <div class="article-style">
       
-      Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the ggsci package but coudlnt find the names or hex codes for the color.
+      Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. tidyverse and ggplot in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted.
       
     </div>
   </div>
@@ -262,6 +262,12 @@
   <div>
     <h2><a href="/post/misc-functions-in-r/">Misc Functions in R</a></h2>
     <div class="article-style">
+      
+      This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated
+How to get session info and version information for an R session sessionInfo()
+see loaded packages search()
+see the commands that are contained within a package lsf.str(&ldquo;pakcage:name&rdquo;)
+list all objects in a package ls(&rdquo;
       
     </div>
   </div>
@@ -271,7 +277,20 @@
     <div class="article-style">
       
       In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.
+###load libraries
+library(tidyverse) library(ggpubr) ###create the variables
+set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2) ###combine into dataframe
+x &lt;- data.frame(death,readmit,id) names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;) ###check the results
+      
+    </div>
+  </div>
+  
+  <div>
+    <h2><a href="/post/stats-software-compared-a-n00bs-viewpoint/">Stats software compared: A n00bs Viewpoint</a></h2>
+    <div class="article-style">
+      
+      While in my MPH training I had the opportunity to use (in class) both Stata and SAS. They were both great, but it became apparent during that time that serious stat were done with R. Further, visualizations that I saw from R packages like ggplot were just so much prettier than anything I saw in SAS or Stata.
+There were no specific classes to learn R during my MPH, but I was able to teach myself by taking free online class, googling answer, and just experimenting with my data and comparing it to other software I already knew.
       
     </div>
   </div>
@@ -285,7 +304,7 @@ load libraries library(tidyverse) library(ggpubr)  create the variables set.seed
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2018 Tim Feeney &middot; 
+      © 2018 Tim Feeney &middot; 
 
       Powered by the
       <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

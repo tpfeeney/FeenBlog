@@ -329,17 +329,14 @@
 
     <div class="article-style" itemprop="articleBody">
       <p>Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. <code>tidyverse</code> and <code>ggplot</code> in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the <code>ggsci</code> package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.</p>
-<div id="libraries" class="section level1">
-<h1>libraries</h1>
+<p>#libraries</p>
 <pre class="r"><code>library(tidyverse)
 library(scales)
 library(RColorBrewer)
 library(ggsci)
 library(wesanderson)
 library(ggthemes)</code></pre>
-</div>
-<div id="ggsci-colors-and-hex-not-a-complete-list" class="section level1">
-<h1>ggsci colors and Hex (not a complete list)</h1>
+<p>#ggsci colors and Hex (not a complete list)</p>
 <p>JAMA</p>
 <pre class="r"><code>show_col(pal_jama(&quot;default&quot;)(7))</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
@@ -371,10 +368,8 @@ library(ggthemes)</code></pre>
 <p>Rick and Morty</p>
 <pre class="r"><code>show_col(pal_rickandmorty(&quot;schwifty&quot;)(12))</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-</div>
-<div id="ggthemes-colors" class="section level1">
-<h1>ggthemes colors</h1>
-<p>Stata</p>
+<p>#ggthemes colors
+Stata</p>
 <pre class="r"><code>show_col(stata_pal(&quot;s2color&quot;)(15))</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre class="r"><code>    show_col(stata_pal(&quot;s1rcolor&quot;)(15))</code></pre>
@@ -388,7 +383,8 @@ library(ggthemes)</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>google docs colors</p>
 <pre class="r"><code>show_col(gdocs_pal()(20))</code></pre>
-<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png" width="672" /> economist</p>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+economist</p>
 <pre class="r"><code>show_col(economist_pal()(6))
     ## fill palette
     show_col(economist_pal(fill = TRUE)(6))</code></pre>
@@ -396,9 +392,7 @@ library(ggthemes)</code></pre>
 <p>colorblind</p>
 <pre class="r"><code>show_col(colorblind_pal()(8))</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
-</div>
-<div id="display-overall-brewer-colors" class="section level1">
-<h1>Display overall Brewer colors</h1>
+<p>#Display overall Brewer colors</p>
 <pre class="r"><code>display.brewer.all()</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <pre class="r"><code>brewer.pal.info</code></pre>
@@ -438,10 +432,9 @@ library(ggthemes)</code></pre>
 ## YlGnBu           9      seq       TRUE
 ## YlOrBr           9      seq       TRUE
 ## YlOrRd           9      seq       TRUE</code></pre>
-</div>
-<div id="brewer-hex-and-color-palette" class="section level1">
-<h1>Brewer Hex and Color palette</h1>
-<p>BrBG can use:</p>
+<p>#Brewer Hex and Color palette
+BrBG
+can use:</p>
 <pre class="r"><code>brewer.pal(n=11,name=&quot;BrBG&quot;)</code></pre>
 <pre><code>##  [1] &quot;#543005&quot; &quot;#8C510A&quot; &quot;#BF812D&quot; &quot;#DFC27D&quot; &quot;#F6E8C3&quot; &quot;#F5F5F5&quot; &quot;#C7EAE5&quot;
 ##  [8] &quot;#80CDC1&quot; &quot;#35978F&quot; &quot;#01665E&quot; &quot;#003C30&quot;</code></pre>
@@ -450,9 +443,7 @@ library(ggthemes)</code></pre>
 <p>or can use <code>show_col</code> command instead</p>
 <pre class="r"><code>show_col(brewer_pal(palette = &quot;BrBG&quot;)(11))</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
-</div>
-<div id="wes-anderson-movie-color-themes" class="section level1">
-<h1>Wes Anderson Movie Color Themes</h1>
+<p>#Wes Anderson Movie Color Themes</p>
 <pre class="r"><code>wes_palettes</code></pre>
 <pre><code>## $BottleRocket1
 ## [1] &quot;#A42820&quot; &quot;#5F5647&quot; &quot;#9B110E&quot; &quot;#3F5151&quot; &quot;#4E2A1E&quot; &quot;#550307&quot; &quot;#0C1707&quot;
@@ -530,7 +521,8 @@ library(ggthemes)</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <p>Darjeeling1</p>
 <pre class="r"><code>show_col(wes_palettes$Darjeeling1)</code></pre>
-<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png" width="672" /> Darjeeling2</p>
+<p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+Darjeeling2</p>
 <pre class="r"><code>show_col(wes_palettes$Darjeeling2)</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 <p>Fantastic Fox 1</p>
@@ -557,11 +549,12 @@ library(ggthemes)</code></pre>
 <p>IsleofDogs2</p>
 <pre class="r"><code>show_col(wes_palettes$IsleofDogs2)</code></pre>
 <p><img src="/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
-</div>
-<div id="references" class="section level1">
-<h1>References:</h1>
-<p><a href="https://rpubs.com/anhld/169514" class="uri">https://rpubs.com/anhld/169514</a> <a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf" class="uri">https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf</a> <a href="https://cran.r-project.org/web/packages/ggsci/ggsci.pdf" class="uri">https://cran.r-project.org/web/packages/ggsci/ggsci.pdf</a> <a href="http://www.sthda.com/english/wiki/colors-in-r" class="uri">http://www.sthda.com/english/wiki/colors-in-r</a> <a href="https://github.com/EmilHvitfeldt/r-color-palettes" class="uri">https://github.com/EmilHvitfeldt/r-color-palettes</a></p>
-</div>
+<p>#References:</p>
+<p><a href="https://rpubs.com/anhld/169514" class="uri">https://rpubs.com/anhld/169514</a>
+<a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf" class="uri">https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf</a>
+<a href="https://cran.r-project.org/web/packages/ggsci/ggsci.pdf" class="uri">https://cran.r-project.org/web/packages/ggsci/ggsci.pdf</a>
+<a href="http://www.sthda.com/english/wiki/colors-in-r" class="uri">http://www.sthda.com/english/wiki/colors-in-r</a>
+<a href="https://github.com/EmilHvitfeldt/r-color-palettes" class="uri">https://github.com/EmilHvitfeldt/r-color-palettes</a></p>
 
     </div>
 

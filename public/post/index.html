@@ -345,12 +345,11 @@
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    <p>This post is VERY in progress. The point is as a reference for myself for simulating data and working with probability distributions.</p>
-<div id="references" class="section level1">
-<h1>References:</h1>
-<p><a href="http://seankross.com/notes/dpqr/" class="uri">http://seankross.com/notes/dpqr/</a> <a href="http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf" class="uri">http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf</a> <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html" class="uri">https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html</a></p>
-</div>
-
+    This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated
+How to get session info and version information for an R session sessionInfo()
+see loaded packages search()
+see the commands that are contained within a package lsf.str("pakcage:name")
+list all objects in a package ls("
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
@@ -409,7 +408,10 @@
   <div class="article-style" itemprop="articleBody">
     
     In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.
+###load libraries
+library(tidyverse) library(ggpubr) ###create the variables
+set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2) ###combine into dataframe
+x &lt;- data.frame(death,readmit,id) names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;) ###check the results
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">

@@ -18,7 +18,10 @@
     
   
   <meta name="description" content="In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.">
+###load libraries
+library(tidyverse) library(ggpubr) ###create the variables
+set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2) ###combine into dataframe
+x &lt;- data.frame(death,readmit,id) names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;) ###check the results">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/how-to-visualize-binary-outcomes-in-research/">
@@ -81,7 +84,10 @@ load libraries library(tidyverse) library(ggpubr)  create the variables set.seed
   <meta property="og:url" content="/post/how-to-visualize-binary-outcomes-in-research/">
   <meta property="og:title" content="How to Visualize Binary Outcomes in Research | The Feeney">
   <meta property="og:description" content="In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.
-load libraries library(tidyverse) library(ggpubr)  create the variables set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2)  combine into dataframe x &lt;- data.">
+###load libraries
+library(tidyverse) library(ggpubr) ###create the variables
+set.seed(15762) death&lt;-rbinom(1000,1,0.03) readmit &lt;-rbinom(1000,1, 0.1) id&lt;-rbinom(1000,5,0.2) ###combine into dataframe
+x &lt;- data.frame(death,readmit,id) names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;) ###check the results">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-06-16T00:00:00&#43;00:00">
@@ -331,25 +337,18 @@ load libraries library(tidyverse) library(ggpubr)  create the variables set.seed
 
     <div class="article-style" itemprop="articleBody">
       <p>In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.</p>
-<div id="load-libraries" class="section level3">
-<h3>load libraries</h3>
+<p>###load libraries</p>
 <pre class="r"><code>library(tidyverse)
 library(ggpubr)</code></pre>
-</div>
-<div id="create-the-variables" class="section level3">
-<h3>create the variables</h3>
+<p>###create the variables</p>
 <pre class="r"><code>set.seed(15762)
 death&lt;-rbinom(1000,1,0.03)
 readmit &lt;-rbinom(1000,1, 0.1)
 id&lt;-rbinom(1000,5,0.2)</code></pre>
-</div>
-<div id="combine-into-dataframe" class="section level3">
-<h3>combine into dataframe</h3>
+<p>###combine into dataframe</p>
 <pre class="r"><code>x &lt;- data.frame(death,readmit,id)
 names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;)</code></pre>
-</div>
-<div id="check-the-results" class="section level3">
-<h3>check the results</h3>
+<p>###check the results</p>
 <pre class="r"><code>head(x)
 ##   death readmit id
 ## 1     0       0  2
@@ -360,26 +359,18 @@ names(x) &lt;- c(&quot;death&quot;, &quot;readmit&quot;, &quot;id&quot;)</code><
 ## 6     0       0  0</code></pre>
 <p>Now here is where it was tricky for me. If you, like I typically do, work with large data then you will need to extract the components you want. Typically for the specific outcome I am interested in, i’ll use <code>na.omit(df)</code> to restrict to only observations with all outcomes observed; excluding NAs</p>
 <p>So once you do that you want to select out the binary outcome you are interested in, and I will be using death as the outcome to evaluate.</p>
-</div>
-<div id="pull-out-the-observations-i-am-interested-in-the-proportion-of-death-across-different-ids" class="section level3">
-<h3>pull out the observations I am interested in the proportion of death across different IDs</h3>
+<p>###pull out the observations I am interested in the proportion of death across different IDs</p>
 <pre class="r"><code>death_x &lt;-dplyr::select(x, death, id)</code></pre>
-</div>
-<div id="create-proportion-table-to-get-proportion-of-deaths-across-different-ids" class="section level3">
-<h3>create proportion table to get proportion of deaths across different IDs</h3>
-<pre class="r"><code>death_prop &lt;- death_x %&gt;% count(death, id) %&gt;% mutate(prop=prop.table(n))</code></pre>
-</div>
-<div id="now-just-look-at-the-proportion-of-those-that-died-this-next-step-basically-makes-sure-we-only-visualize-the-proportion-of-death" class="section level3">
-<h3>now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death</h3>
+<p>###create proportion table to get proportion of deaths across different IDs</p>
+<pre class="r"><code>death_prop &lt;- death_x %&gt;% count(death, id) %&gt;% mutate(prop=prop.table(n))
+## Warning: package &#39;bindrcpp&#39; was built under R version 3.4.4</code></pre>
+<p>###now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death</p>
 <pre class="r"><code>death_prop &lt;- dplyr::filter(death_prop, death==1)</code></pre>
-</div>
-<div id="then-just-graph-it-ive-chosen-to-use-a-lollipop-plot-because-i-think-that-is-the-best" class="section level3">
-<h3>then just graph it; ive chosen to use a lollipop plot, because I think that is the best</h3>
+<p>###then just graph it; ive chosen to use a lollipop plot, because I think that is the best</p>
 <pre class="r"><code>ggplot(death_prop, aes(x=id, y=prop)) +
   geom_point() + 
   geom_segment( aes(x=id, xend=id, y=0, yend=prop))+theme_classic()+geom_hline(aes(yintercept=0))+labs(x=&quot;ID #&quot;, y=&quot;Proportion of Death&quot;, title=&quot;Variability in Death over ID&quot;)</code></pre>
 <p><img src="/post/2018-06-16-how-to-visualize-binary-outcomes-in-research_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-</div>
 
     </div>
 

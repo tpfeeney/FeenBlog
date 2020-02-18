@@ -17,17 +17,14 @@
       
       <guid>/post/color-palettes-in-r/</guid>
       <description>&lt;p&gt;Colors, amirite? Finding the right ones to make a plot look good can be hard. I always like to use colors that really help set my plots apart. &lt;code&gt;tidyverse&lt;/code&gt; and &lt;code&gt;ggplot&lt;/code&gt; in particular are great at incorporating wonderful palettes. However, recently I was vexed by a plot where I couldnt just use a theme addition to add the colors I wanted and instead had to specify each color I wanted. At the time I wanted to use something from the &lt;code&gt;ggsci&lt;/code&gt; package but coudlnt find the names or hex codes for the color. This post is meant to be a reference for myself and others on the different hex codes for packages.&lt;/p&gt;
-&lt;div id=&#34;libraries&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;libraries&lt;/h1&gt;
+&lt;p&gt;#libraries&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(scales)
 library(RColorBrewer)
 library(ggsci)
 library(wesanderson)
 library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ggsci-colors-and-hex-not-a-complete-list&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;ggsci colors and Hex (not a complete list)&lt;/h1&gt;
+&lt;p&gt;#ggsci colors and Hex (not a complete list)&lt;/p&gt;
 &lt;p&gt;JAMA&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_jama(&amp;quot;default&amp;quot;)(7))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
@@ -59,10 +56,8 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Rick and Morty&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(pal_rickandmorty(&amp;quot;schwifty&amp;quot;)(12))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ggthemes-colors&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;ggthemes colors&lt;/h1&gt;
-&lt;p&gt;Stata&lt;/p&gt;
+&lt;p&gt;#ggthemes colors
+Stata&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(stata_pal(&amp;quot;s2color&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;    show_col(stata_pal(&amp;quot;s1rcolor&amp;quot;)(15))&lt;/code&gt;&lt;/pre&gt;
@@ -76,7 +71,8 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;google docs colors&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(gdocs_pal()(20))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt; economist&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;
+economist&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(economist_pal()(6))
     ## fill palette
     show_col(economist_pal(fill = TRUE)(6))&lt;/code&gt;&lt;/pre&gt;
@@ -84,9 +80,7 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;colorblind&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(colorblind_pal()(8))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;display-overall-brewer-colors&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Display overall Brewer colors&lt;/h1&gt;
+&lt;p&gt;#Display overall Brewer colors&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;display.brewer.all()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal.info&lt;/code&gt;&lt;/pre&gt;
@@ -126,10 +120,9 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 ## YlGnBu           9      seq       TRUE
 ## YlOrBr           9      seq       TRUE
 ## YlOrRd           9      seq       TRUE&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;brewer-hex-and-color-palette&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Brewer Hex and Color palette&lt;/h1&gt;
-&lt;p&gt;BrBG can use:&lt;/p&gt;
+&lt;p&gt;#Brewer Hex and Color palette
+BrBG
+can use:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;brewer.pal(n=11,name=&amp;quot;BrBG&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;#543005&amp;quot; &amp;quot;#8C510A&amp;quot; &amp;quot;#BF812D&amp;quot; &amp;quot;#DFC27D&amp;quot; &amp;quot;#F6E8C3&amp;quot; &amp;quot;#F5F5F5&amp;quot; &amp;quot;#C7EAE5&amp;quot;
 ##  [8] &amp;quot;#80CDC1&amp;quot; &amp;quot;#35978F&amp;quot; &amp;quot;#01665E&amp;quot; &amp;quot;#003C30&amp;quot;&lt;/code&gt;&lt;/pre&gt;
@@ -138,9 +131,7 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;or can use &lt;code&gt;show_col&lt;/code&gt; command instead&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(brewer_pal(palette = &amp;quot;BrBG&amp;quot;)(11))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;wes-anderson-movie-color-themes&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Wes Anderson Movie Color Themes&lt;/h1&gt;
+&lt;p&gt;#Wes Anderson Movie Color Themes&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wes_palettes&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## $BottleRocket1
 ## [1] &amp;quot;#A42820&amp;quot; &amp;quot;#5F5647&amp;quot; &amp;quot;#9B110E&amp;quot; &amp;quot;#3F5151&amp;quot; &amp;quot;#4E2A1E&amp;quot; &amp;quot;#550307&amp;quot; &amp;quot;#0C1707&amp;quot;
@@ -218,7 +209,8 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Darjeeling1&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt; Darjeeling2&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;
+Darjeeling2&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$Darjeeling2)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Fantastic Fox 1&lt;/p&gt;
@@ -245,11 +237,12 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;IsleofDogs2&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;show_col(wes_palettes$IsleofDogs2)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-07-22-color-palettes-in-r_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;References:&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt; &lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt; &lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt; &lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt; &lt;a href=&#34;https://github.com/EmilHvitfeldt/r-color-palettes&#34; class=&#34;uri&#34;&gt;https://github.com/EmilHvitfeldt/r-color-palettes&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;#References:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rpubs.com/anhld/169514&#34; class=&#34;uri&#34;&gt;https://rpubs.com/anhld/169514&lt;/a&gt;
+&lt;a href=&#34;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&#34; class=&#34;uri&#34;&gt;https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf&lt;/a&gt;
+&lt;a href=&#34;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&#34; class=&#34;uri&#34;&gt;https://cran.r-project.org/web/packages/ggsci/ggsci.pdf&lt;/a&gt;
+&lt;a href=&#34;http://www.sthda.com/english/wiki/colors-in-r&#34; class=&#34;uri&#34;&gt;http://www.sthda.com/english/wiki/colors-in-r&lt;/a&gt;
+&lt;a href=&#34;https://github.com/EmilHvitfeldt/r-color-palettes&#34; class=&#34;uri&#34;&gt;https://github.com/EmilHvitfeldt/r-color-palettes&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -259,11 +252,25 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/misc-functions-in-r/</guid>
-      <description>&lt;p&gt;This post is VERY in progress. The point is as a reference for myself for simulating data and working with probability distributions.&lt;/p&gt;
-&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;References:&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;http://seankross.com/notes/dpqr/&#34; class=&#34;uri&#34;&gt;http://seankross.com/notes/dpqr/&lt;/a&gt; &lt;a href=&#34;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&#34; class=&#34;uri&#34;&gt;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&lt;/a&gt; &lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&#34; class=&#34;uri&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
+      <description>&lt;p&gt;This post is VERY in progress. The point is as a reference for myself for small things I want to refer to in the future, for simulating data and working with probability distributions. Its a hodge podge and always being updated&lt;/p&gt;
+&lt;p&gt;How to get session info and version information for an R session
+&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;see loaded packages
+&lt;code&gt;search()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;see the commands that are contained within a package
+&lt;code&gt;lsf.str(&#34;pakcage:name&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;list all objects in a package
+&lt;code&gt;ls(&#34;package:name&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;if package is not loaded can use
+&lt;code&gt;help(package = name)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;#Probability Distributions: A gentle introduction on how to use the different commands.
+There is a good tutorial here too: &lt;a href=&#34;http://ww2.coastal.edu/kingw/statistics/R-tutorials/prob.html&#34; class=&#34;uri&#34;&gt;http://ww2.coastal.edu/kingw/statistics/R-tutorials/prob.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Can use &lt;code&gt;?Distributions&lt;/code&gt; to pull up the list of distributions covered in R
+start with the &lt;code&gt;dnorm&lt;/code&gt; distribution.&lt;/p&gt;
+&lt;p&gt;#References:
+&lt;a href=&#34;http://seankross.com/notes/dpqr/&#34; class=&#34;uri&#34;&gt;http://seankross.com/notes/dpqr/&lt;/a&gt;
+&lt;a href=&#34;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&#34; class=&#34;uri&#34;&gt;http://xcelab.net/rm/wp-content/uploads/2010/03/sim.pdf&lt;/a&gt;
+&lt;a href=&#34;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&#34; class=&#34;uri&#34;&gt;https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -274,25 +281,18 @@ library(ggthemes)&lt;/code&gt;&lt;/pre&gt;
       
       <guid>/post/how-to-visualize-binary-outcomes-in-research/</guid>
       <description>&lt;p&gt;In my research I frequently want visualize outcomes over groups. The nature of clinical reserach means that often times outcomes are binary and I want to find the proportion of binary outcomes over groups. This was not straight forward for me, so I decided to make a post about it.&lt;/p&gt;
-&lt;div id=&#34;load-libraries&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;load libraries&lt;/h3&gt;
+&lt;p&gt;###load libraries&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(ggpubr)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;create-the-variables&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;create the variables&lt;/h3&gt;
+&lt;p&gt;###create the variables&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(15762)
 death&amp;lt;-rbinom(1000,1,0.03)
 readmit &amp;lt;-rbinom(1000,1, 0.1)
 id&amp;lt;-rbinom(1000,5,0.2)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;combine-into-dataframe&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;combine into dataframe&lt;/h3&gt;
+&lt;p&gt;###combine into dataframe&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x &amp;lt;- data.frame(death,readmit,id)
 names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &amp;quot;id&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;check-the-results&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;check the results&lt;/h3&gt;
+&lt;p&gt;###check the results&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(x)
 ##   death readmit id
 ## 1     0       0  2
@@ -303,26 +303,18 @@ names(x) &amp;lt;- c(&amp;quot;death&amp;quot;, &amp;quot;readmit&amp;quot;, &am
 ## 6     0       0  0&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now here is where it was tricky for me. If you, like I typically do, work with large data then you will need to extract the components you want. Typically for the specific outcome I am interested in, i’ll use &lt;code&gt;na.omit(df)&lt;/code&gt; to restrict to only observations with all outcomes observed; excluding NAs&lt;/p&gt;
 &lt;p&gt;So once you do that you want to select out the binary outcome you are interested in, and I will be using death as the outcome to evaluate.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;pull-out-the-observations-i-am-interested-in-the-proportion-of-death-across-different-ids&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;pull out the observations I am interested in the proportion of death across different IDs&lt;/h3&gt;
+&lt;p&gt;###pull out the observations I am interested in the proportion of death across different IDs&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_x &amp;lt;-dplyr::select(x, death, id)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;create-proportion-table-to-get-proportion-of-deaths-across-different-ids&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;create proportion table to get proportion of deaths across different IDs&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- death_x %&amp;gt;% count(death, id) %&amp;gt;% mutate(prop=prop.table(n))&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;now-just-look-at-the-proportion-of-those-that-died-this-next-step-basically-makes-sure-we-only-visualize-the-proportion-of-death&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death&lt;/h3&gt;
+&lt;p&gt;###create proportion table to get proportion of deaths across different IDs&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- death_x %&amp;gt;% count(death, id) %&amp;gt;% mutate(prop=prop.table(n))
+## Warning: package &amp;#39;bindrcpp&amp;#39; was built under R version 3.4.4&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###now just look at the proportion of those that died; this next step basically makes sure we only visualize the proportion of death&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;death_prop &amp;lt;- dplyr::filter(death_prop, death==1)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;then-just-graph-it-ive-chosen-to-use-a-lollipop-plot-because-i-think-that-is-the-best&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;then just graph it; ive chosen to use a lollipop plot, because I think that is the best&lt;/h3&gt;
+&lt;p&gt;###then just graph it; ive chosen to use a lollipop plot, because I think that is the best&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(death_prop, aes(x=id, y=prop)) +
   geom_point() + 
   geom_segment( aes(x=id, xend=id, y=0, yend=prop))+theme_classic()+geom_hline(aes(yintercept=0))+labs(x=&amp;quot;ID #&amp;quot;, y=&amp;quot;Proportion of Death&amp;quot;, title=&amp;quot;Variability in Death over ID&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2018-06-16-how-to-visualize-binary-outcomes-in-research_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
 </description>
     </item>
     
